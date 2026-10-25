@@ -11,6 +11,8 @@ yüklenmez.
 | `/app-ads.txt` | AdMob yetkili satıcılar dosyası. Alan adının **kökünde** olmak zorunda |
 | `/sonant/` | Sonant tanıtım ve destek |
 | `/sonant/privacy/` | Sonant gizlilik politikası (Play Console'daki adres) |
+| `/neondodger/` | Neon Dodger tanıtım ve destek (İngilizce, oyunun dili) |
+| `/neondodger/privacy-policy.html` | Neon Dodger gizlilik politikası. Yol bilerek `bugrakaya.dev`'deki eski adresle aynı: o alan adı buraya bağlanırsa uygulamadaki ve Play'deki eski bağlantı çalışmaya devam eder |
 
 **Yeni uygulama:** `/<uygulama>/` ve `/<uygulama>/privacy/` klasörlerini aç, ana sayfadaki listeye
 ekle. Gizlilik politikası her uygulamanın kendine özel olmalı (Play şartı). Aynı AdMob hesabını

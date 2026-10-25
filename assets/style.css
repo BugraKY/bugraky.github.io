@@ -27,6 +27,12 @@
   }
 }
 
+/* Neon Dodger's pages: the game's neon cyan, deepened on light backgrounds for contrast. */
+.app-neondodger { --accent: #006d78; --accent-soft: #c9f6fa; }
+@media (prefers-color-scheme: dark) {
+  .app-neondodger { --accent: #5cf2ff; --accent-soft: #0f3a40; }
+}
+
 *, *::before, *::after { box-sizing: border-box; }
 
 html { -webkit-text-size-adjust: 100%; }
