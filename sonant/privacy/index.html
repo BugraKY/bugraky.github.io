@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sonant Gizlilik Politikası</title>
+  <meta name="description" content="Sonant Android uygulamasının gizlilik politikası: hangi verilerin işlendiği, kendi sunucumuz ve Google AdMob.">
+  <link rel="icon" href="../icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../../">BGR Dev</a>
+      <nav aria-label="Sonant"><a href="../">Sonant</a></nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="tr">
+      <h1>Sonant Gizlilik Politikası</h1>
+      <p class="meta">Yürürlük tarihi: 25 Ekim 2026</p>
+      <nav class="lang-switch" aria-label="Dil">
+        <a href="#tr" lang="tr">Türkçe</a>
+        <a href="#en" lang="en">English</a>
+      </nav>
+
+      <p>Bu politika, BGR Dev'in geliştirdiği Sonant Android uygulaması (<code>com.bugraky.sonant</code>) için geçerlidir ve uygulamanın hangi verileri nasıl işlediğini anlatır.</p>
+
+      <div class="note">
+        <p><strong>Kısaca</strong></p>
+        <ul>
+          <li>Videoların cihazından çıkmaz; bütün ses işleme telefonunda yapılır.</li>
+          <li>Hesap yok. Adın, e-postan ya da rehberin istenmez, konum izni de istenmez.</li>
+          <li>Kendi sunucumuza kimlik, cihaz bilgisi ya da IP adresi gönderilmez ve kaydedilmez; yalnızca günlük toplam dışa aktarma sayısı bir artar.</li>
+          <li>Reklamlar Google AdMob ile gösterilir. AdMob'un topladığı veriler aşağıda yazıyor.</li>
+        </ul>
+      </div>
+
+      <h2>1. Videoların</h2>
+      <ul>
+        <li>Videoyu Android'in sistem seçicisiyle sen seçersin; uygulama yalnızca seçtiğin dosyaya erişir. Galeri izni istenmez.</li>
+        <li>Efektler cihazda uygulanır. Video ve ses hiçbir sunucuya yüklenmez.</li>
+        <li>Dışa aktarılan video cihazındaki "Movies/Sonant" klasörüne kaydedilir.</li>
+      </ul>
+
+      <h2>2. Kendi sunucumuz</h2>
+      <p>Uygulama BGR Dev'in sunucusuna yalnızca iki iş için bağlanır:</p>
+      <ul>
+        <li><strong>Ayarları almak.</strong> Reklamların kapalı olduğu zaman aralığı, internet bağlantısı şartı ve en düşük ya da önerilen uygulama sürümü. Bu istekle senden ya da cihazından hiçbir bilgi gönderilmez.</li>
+        <li><strong>Dışa aktarma sayacı.</strong> Bir dışa aktarma başarıyla bittiğinde sunucudaki "bugünün toplamı" bir artar. İstek boştur: kimlik, cihaz modeli, uygulama sürümü ya da reklam kimliği içermez. Sunucuda yalnızca tarih ve o günün toplam sayısı tutulur; bu sayı kimseyle ilişkilendirilemez. Çevrimdışıyken biten dışa aktarmalar sayılmaz.</li>
+      </ul>
+      <p>İnternetteki her bağlantıda olduğu gibi IP adresin, bağlantı kurulurken teknik olarak sunucuya ulaşır. Sunucumuz IP adresini okumaz, günlüğe yazmaz ve saklamaz. Çerez kullanılmaz, bağlantı HTTPS ile şifrelenir. Sunucuya ulaşılamazsa uygulama son aldığı ayarlarla çalışmayı sürdürür.</p>
+
+      <h2>3. Cihazında kalan bilgiler</h2>
+      <p>Şunlar yalnızca cihazında saklanır ve bize gönderilmez:</p>
+      <ul>
+        <li>sunucudan alınan son ayarlar;</li>
+        <li>internete en son ne zaman bağlandığın: bağlantı şartı açıksa, uzun süre çevrimdışı kalan cihazda kaydetmeden önce bağlantı istenir. Bu kontrol tamamen cihazda yapılır;</li>
+        <li>izlediğin reklamın verdiği 24 saatlik kaydetme hakkının süresi;</li>
+        <li>tema tercihin ve ertelediğin güncelleme önerisi.</li>
+      </ul>
+      <p>Android'in yedekleme özelliği açıksa Android bu ayarları Google hesabındaki cihaz yedeğine ekleyebilir. Uygulamanın verilerini temizlediğinde ya da uygulamayı kaldırdığında silinirler.</p>
+
+      <h2>4. Reklamlar (Google AdMob)</h2>
+      <p>Sonant, Google LLC'nin AdMob hizmetiyle ödüllü reklam gösterir. Reklam yalnızca "Dışa aktar"a bastığında ve izlemeyi seçtiğinde açılır; ödülü 24 saat boyunca reklamsız kaydetmektir. Reklam SDK'sı ancak dışa aktarırken reklam gerektiğinde başlatılır; reklamlar kapalıyken reklam isteği yapılmaz.</p>
+      <p>Reklam göstermek, reklamları ölçmek ve dolandırıcılığı önlemek için uygulamadaki Google Mobile Ads SDK'sı şu verileri toplar ve Google'la paylaşır:</p>
+      <ul>
+        <li>IP adresi (cihazın yaklaşık konumunu tahmin etmek için kullanılabilir);</li>
+        <li>uygulama içi etkileşimler (reklamın açılması, izlenmesi, reklama dokunma gibi);</li>
+        <li>tanılama bilgileri (uygulamanın ve SDK'nın performansı);</li>
+        <li>cihaz tanımlayıcıları (Android reklam kimliği ve uygulama seti kimliği).</li>
+      </ul>
+      <p>Google'ın bu verileri nasıl kullandığı <a href="https://policies.google.com/technologies/partner-sites?hl=tr">Google, hizmetlerimizi kullanan sitelerden veya uygulamalardan gelen bilgileri nasıl kullanır</a> ve <a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a> sayfalarında anlatılıyor. Reklam kimliğini Android ayarlarından (genellikle Ayarlar &gt; Gizlilik &gt; Reklamlar ya da Ayarlar &gt; Google &gt; Reklamlar) sıfırlayabilir ya da silebilirsin.</p>
+
+      <h2>5. Google Play</h2>
+      <p>Sürüm kontrolü için uygulama, Google Play'in uygulama içi güncelleme hizmetini kullanır: yeni sürüm olup olmadığını cihazdaki Google Play'e sorar, güncellemeyi Google Play yapar. Bu işlem Google'ın politikalarına tabidir.</p>
+
+      <h2>6. İzinler</h2>
+      <ul>
+        <li><strong>İnternet ve ağ durumu:</strong> ayarlar, sayaç, reklamlar ve bağlantı şartı için.</li>
+        <li><strong>Bildirimler:</strong> dışa aktarmanın ilerlemesini göstermek ve iptal edebilmen için.</li>
+        <li><strong>Ön plan hizmeti:</strong> uygulamadan çıksan da dışa aktarma bitsin diye.</li>
+        <li><strong>Depolama (yalnızca Android 9 ve öncesi):</strong> dışa aktarılan videoyu kaydetmek için.</li>
+        <li><strong>Reklam kimliği:</strong> AdMob için.</li>
+      </ul>
+
+      <h2>7. Çocuklar</h2>
+      <p>Sonant çocuklara yönelik değildir ve 13 yaşın altındaki çocuklardan bilerek kişisel veri toplamaz.</p>
+
+      <h2>8. Saklama ve silme</h2>
+      <p>Kendi sunucumuzda kişiyle ilişkilendirilebilecek veri yoktur, dolayısıyla silinecek kişisel veri de yoktur; günlük toplamlar anonim istatistik olarak tutulur. Cihazındaki bilgiler, uygulama verisi temizlendiğinde ya da uygulama kaldırıldığında silinir. Google'ın topladığı veriler için Google'ın gizlilik araçlarını ve reklam kimliği ayarlarını kullanabilirsin.</p>
+
+      <h2>9. KVKK kapsamında bilgilendirme</h2>
+      <p>6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında:</p>
+      <ul>
+        <li><strong>Veri sorumlusu:</strong> BGR Dev, <a href="mailto:bugrakaya16@gmail.com">bugrakaya16@gmail.com</a>.</li>
+        <li><strong>Kendi işlediğimiz veriler:</strong> Kendi sunucumuzda kişisel veri işlemiyoruz; tutulan tek bilgi, kimseyle ilişkilendirilemeyen günlük toplam dışa aktarma sayısıdır.</li>
+        <li><strong>Reklam hizmeti:</strong> 4. bölümde sayılan veriler uygulamadaki Google Mobile Ads SDK'sı aracılığıyla otomatik yollarla toplanır; reklam gösterimi, ölçüm ve dolandırıcılığın önlenmesi amacıyla Google tarafından, yurt dışındaki sunucular da dahil olmak üzere işlenir.</li>
+        <li><strong>Hakların:</strong> KVKK'nın 11. maddesindeki haklarına (verilerinin işlenip işlenmediğini öğrenme, bilgi isteme, düzeltilmesini ya da silinmesini isteme, itiraz etme vb.) ilişkin taleplerini yukarıdaki adrese iletebilirsin.</li>
+      </ul>
+
+      <h2>10. Değişiklikler</h2>
+      <p>Bu politika değişirse bu sayfayı güncelleriz ve yürürlük tarihini değiştiririz.</p>
+
+      <h2>11. İletişim</h2>
+      <p>Sorular ve talepler için: <a href="mailto:bugrakaya16@gmail.com?subject=Sonant%20gizlilik">bugrakaya16@gmail.com</a></p>
+    </section>
+
+    <hr>
+
+    <section id="en" lang="en">
+      <h1>Sonant Privacy Policy</h1>
+      <p class="meta">Effective date: 25 October 2026</p>
+
+      <p>This policy applies to the Sonant Android app (<code>com.bugraky.sonant</code>) developed by BGR Dev and explains what data the app handles and how.</p>
+
+      <div class="note">
+        <p><strong>In short</strong></p>
+        <ul>
+          <li>Your videos never leave your device; all audio processing happens on your phone.</li>
+          <li>There are no accounts. The app never asks for your name, email or contacts, nor for location permission.</li>
+          <li>No identifier, device information or IP address is sent to or stored by our own server; it only increments a daily total of exports.</li>
+          <li>Ads are served by Google AdMob; what AdMob collects is described below.</li>
+        </ul>
+      </div>
+
+      <h2>1. Your videos</h2>
+      <ul>
+        <li>You choose the video with Android's system picker; the app can only access the file you chose. No gallery permission is requested.</li>
+        <li>Effects are applied on the device. Video and audio are never uploaded to any server.</li>
+        <li>Exported videos are saved to the "Movies/Sonant" folder on your device.</li>
+      </ul>
+
+      <h2>2. Our server</h2>
+      <p>The app contacts BGR Dev's server for two things only:</p>
+      <ul>
+        <li><strong>Fetching settings:</strong> the time window in which ads are switched off, the internet connection rule, and the minimum and recommended app versions. The request carries no information about you or your device.</li>
+        <li><strong>Export counter:</strong> when an export finishes successfully, the server's total for the day goes up by one. The request is empty: no identifier, device model, app version or advertising ID. The server keeps only the date and that day's total, which cannot be linked to anyone. Exports finished while offline are not counted.</li>
+      </ul>
+      <p>As with any internet connection, your IP address technically reaches the server while the connection is made. Our server does not read, log or store it. No cookies are used, and connections are encrypted with HTTPS. If the server cannot be reached, the app keeps working with the last settings it received.</p>
+
+      <h2>3. Information kept on your device</h2>
+      <p>The following stays on your device and is not sent to us:</p>
+      <ul>
+        <li>the last settings received from the server;</li>
+        <li>when you were last online: if the connection rule is on, a device that has been offline for a long time asks for a connection before saving. This check happens entirely on the device;</li>
+        <li>when the 24-hour save pass earned by watching an ad expires;</li>
+        <li>your theme choice and any update suggestion you postponed.</li>
+      </ul>
+      <p>If Android backup is turned on, Android may include these settings in your device backup in your Google account. They are deleted when you clear the app's data or uninstall it.</p>
+
+      <h2>4. Ads (Google AdMob)</h2>
+      <p>Sonant shows rewarded ads through Google LLC's AdMob service. An ad only opens when you tap "Dışa aktar" (Export) and choose to watch it; the reward is 24 hours of saving without ads. The ads SDK is only started when an ad is needed for an export, and no ad is requested while ads are switched off.</p>
+      <p>To serve and measure ads and to prevent fraud, the Google Mobile Ads SDK in the app collects the following and shares it with Google:</p>
+      <ul>
+        <li>IP address (which may be used to estimate the device's approximate location);</li>
+        <li>in-app interactions (such as an ad opening, being watched, or being tapped);</li>
+        <li>diagnostic information (performance of the app and the SDK);</li>
+        <li>device identifiers (the Android advertising ID and the app set ID).</li>
+      </ul>
+      <p>How Google uses this data is described in <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use our services</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. You can reset or delete your advertising ID in Android settings (usually Settings &gt; Privacy &gt; Ads, or Settings &gt; Google &gt; Ads).</p>
+
+      <h2>5. Google Play</h2>
+      <p>For version checks the app uses Google Play's in-app update service: it asks Google Play on the device whether a newer version exists, and Google Play performs the update. This is subject to Google's policies.</p>
+
+      <h2>6. Permissions</h2>
+      <ul>
+        <li><strong>Internet and network state:</strong> for settings, the counter, ads and the connection rule.</li>
+        <li><strong>Notifications:</strong> to show export progress and let you cancel it.</li>
+        <li><strong>Foreground service:</strong> so an export can finish after you leave the app.</li>
+        <li><strong>Storage (Android 9 and older only):</strong> to save the exported video.</li>
+        <li><strong>Advertising ID:</strong> for AdMob.</li>
+      </ul>
+
+      <h2>7. Children</h2>
+      <p>Sonant is not directed at children and does not knowingly collect personal data from children under 13.</p>
+
+      <h2>8. Retention and deletion</h2>
+      <p>Our server holds nothing that can be linked to a person, so there is no personal data to delete; daily totals are kept as anonymous statistics. Information on your device is deleted when you clear the app's data or uninstall it. For data collected by Google, use Google's privacy tools and your advertising ID settings.</p>
+
+      <h2>9. Turkish data protection law (KVKK)</h2>
+      <p>The data controller under Turkey's Law No. 6698 on the Protection of Personal Data is BGR Dev (<a href="mailto:bugrakaya16@gmail.com">bugrakaya16@gmail.com</a>). We process no personal data on our own server. The data listed in section 4 is collected automatically by the Google Mobile Ads SDK and processed by Google, including on servers outside Turkey, to serve and measure ads and to prevent fraud. Requests about your rights under Article 11 of the law can be sent to the address above.</p>
+
+      <h2>10. Changes</h2>
+      <p>If this policy changes, we will update this page and its effective date.</p>
+
+      <h2>11. Contact</h2>
+      <p>Questions and requests: <a href="mailto:bugrakaya16@gmail.com?subject=Sonant%20privacy">bugrakaya16@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 BGR Dev</span>
+      <a href="../">Sonant</a>
+      <a href="../../">Tüm uygulamalar</a>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,135 @@
+/* Shared by every page. The palette is Sonant's warm amber; an app with its own colour can
+   override --accent and --accent-soft on its pages. No web fonts and no third-party requests:
+   the privacy pages promise little data, so the site itself loads nothing from elsewhere. */
+
+:root {
+  color-scheme: light dark;
+  --bg: #fff8f4;
+  --surface: #f9efe7;
+  --text: #211a15;
+  --muted: #53453b;
+  --line: #e6d8cd;
+  --accent: #8f4e00;
+  --accent-soft: #ffdcc0;
+  --radius: 14px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1a1715;
+    --surface: #241f1b;
+    --text: #ede2db;
+    --muted: #d3c5b9;
+    --line: #3a342e;
+    --accent: #ffb268;
+    --accent-soft: #4a2400;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  overflow-wrap: break-word;
+}
+
+.wrap { max-width: 44rem; margin: 0 auto; padding: 0 1rem; }
+
+.site-header { border-bottom: 1px solid var(--line); }
+.site-header .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 3.5rem;
+}
+.brand { font-weight: 700; color: var(--text); text-decoration: none; }
+.site-header nav { display: flex; gap: 1rem; }
+.site-header nav a { color: var(--muted); text-decoration: none; }
+.site-header nav a:hover { color: var(--text); }
+
+main.wrap { padding-top: 2.5rem; padding-bottom: 3rem; }
+
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .5rem; letter-spacing: -.01em; }
+h2 { font-size: 1.3rem; line-height: 1.3; margin: 2.25rem 0 .75rem; }
+h3 { font-size: 1.05rem; line-height: 1.4; margin: 1.5rem 0 .5rem; }
+p, ul, ol { margin: 0 0 1rem; }
+ul, ol { padding-left: 1.25rem; }
+li + li { margin-top: .35rem; }
+
+a { color: var(--accent); text-underline-offset: .18em; }
+a:hover { text-decoration-thickness: 2px; }
+
+code {
+  font-size: .92em;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: .05em .35em;
+}
+
+.lead { font-size: 1.15rem; color: var(--muted); }
+.meta { color: var(--muted); font-size: .95rem; }
+
+.note {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+}
+.note > :last-child { margin-bottom: 0; }
+
+.app-hero { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem; }
+.app-hero img { width: 72px; height: 72px; border-radius: 18px; flex: none; }
+.app-hero h1 { margin: 0; }
+.app-hero p { margin: 0; color: var(--muted); }
+
+.apps { list-style: none; padding: 0; }
+.app-card {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1rem;
+}
+.app-card img { width: 56px; height: 56px; border-radius: 14px; flex: none; }
+.app-card h3 { margin: 0 0 .25rem; }
+.app-card p { margin: 0 0 .5rem; }
+.app-card p:last-child { margin-bottom: 0; }
+
+.lang-switch { display: flex; gap: .5rem; margin: 1rem 0 1.5rem; }
+.lang-switch a {
+  padding: .2rem .8rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: .95rem;
+}
+.lang-switch a:hover { background: var(--accent-soft); color: var(--text); }
+
+hr { border: 0; border-top: 1px solid var(--line); margin: 3rem 0; }
+
+.site-footer { border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+.site-footer .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem 1.25rem;
+  padding-top: 1.25rem;
+  padding-bottom: 2rem;
+}
+.site-footer a { color: var(--muted); }
+
+@media (max-width: 30rem) {
+  h1 { font-size: 1.65rem; }
+  .app-hero img { width: 60px; height: 60px; border-radius: 15px; }
+}
